@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Serenity Yoga Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle">&#9776;</button>
+        <h1><img src="images/yoga1.png" alt="Serenity Yoga Studio Logo">Serenity Yoga Studio</h1>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>What We Offer</h2>
+        <p> Serenity Yoga Studio, we offer a diverse range of classes, including:</p>
+        <ul>
+        <li><strong>Vinyasa Flow:</strong> A dynamic sequence of poses that link breath with movement.</li>
+        <li><strong>Hatha Yoga:</strong> A gentle introduction to the basics of yoga postures and breathing techniques.</li>
+        <li><strong>Restorative Yoga:</strong> Slow, restful poses that focus on deep relaxation and stress relief.</li>
+        <li><strong>Meditation:</strong> Guided sessions to cultivate mindfulness, clarity, and inner calm.</li>
+        <li><strong>Prenatal Yoga:</strong> Specially designed classes for expecting mothers to support their body and mind during pregnancy.</li>
+        </ul>
+        <p>In addition to our classes, we host regular workshops, wellness retreats, and community events to help you expand your practice and connect with like-minded individuals.</p>
+        
+        <h2>Our Instructors</h2>
+        <p>Our team of experienced instructors is passionate about sharing the transformative power of yoga. They bring a wealth of knowledge, compassion, and creativity to every class, ensuring that each session is safe, enjoyable, and tailored to your needs.</p>
+        <p>At Serenity Yoga Studio, we are committed to your well-being. Join us today, and discover the many ways that yoga can enhance your life—physically, mentally, and spiritually.</p>
+        <h2>Join our class now</h2>
+        <p>Book your class <a href="contact.html">here.</a></p>
+        
+    </main>
+    <footer> 
+        <p><strong>Copyright &copy; 2024 </strong> <em>Serenity Yoga Studio.</em></p> 
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+    
+            menuToggle.addEventListener('click', function() {
+                if (mainNav.style.display === 'flex') {
+                    mainNav.style.display = 'none';
+                } else {
+                    mainNav.style.display = 'flex';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

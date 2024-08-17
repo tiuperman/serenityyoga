@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Serenity Yoga Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle">&#9776;</button>
+        <h1><img src="images/yoga1.png" alt="Serenity Yoga Studio Logo">Serenity Yoga Studio</h1>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <p>Welcome to <strong>Serenity Yoga Studio</strong>, where tranquility meets transformation. At Serenity, we believe that yoga is more than just a physical practice—it's a path to inner peace, self-discovery, and holistic well-being.</p>
+        
+        <p>Our studio was founded on the principles of mindfulness, balance, and community. Whether you're a seasoned yogi or just beginning your journey, Serenity Yoga Studio offers a welcoming space for everyone to explore the benefits of yoga.</p>
+        
+        <h2>Mission</h2> 
+        <p> Our mission is to create a serene and supportive environment where individuals can deepen their connection with themselves and the world around them. We strive to make yoga accessible to all, offering a variety of classes that cater to different skill levels, interests, and goals.</p>
+        
+        <h2> We Offer</h2>
+        <p> Serenity Yoga Studio, we offer a diverse range of classes, including:</p>
+        <ul>
+        <li><strong>Vinyasa Flow:</strong> A dynamic sequence of poses that link breath with movement.</li>
+        <li><strong>Hatha Yoga:</strong> A gentle introduction to the basics of yoga postures and breathing techniques.</li>
+        <li><strong>Restorative Yoga:</strong> Slow, restful poses that focus on deep relaxation and stress relief.</li>
+        <li><strong>Meditation:</strong> Guided sessions to cultivate mindfulness, clarity, and inner calm.</li>
+        <li><strong>Prenatal Yoga:</strong> Specially designed classes for expecting mothers to support their body and mind during pregnancy.</li>
+        </ul>
+        <p>In addition to our classes, we host regular workshops, wellness retreats, and community events to help you expand your practice and connect with like-minded individuals.</p>
+        
+        <h2> Instructors</h2>
+        <p>Our team of experienced instructors is passionate about sharing the transformative power of yoga. They bring a wealth of knowledge, compassion, and creativity to every class, ensuring that each session is safe, enjoyable, and tailored to your needs.</p>
+        
+        <p>At Serenity Yoga Studio, we are committed to your well-being. Join us today, and discover the many ways that yoga can enhance your life—physically, mentally, and spiritually.</p>
+        
+    </main>
+    <footer> 
+        <p><strong>Copyright &copy; 2024 </strong> <em>Serenity Yoga Studio.</em></p> 
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+    
+            menuToggle.addEventListener('click', function() {
+                if (mainNav.style.display === 'flex') {
+                    mainNav.style.display = 'none';
+                } else {
+                    mainNav.style.display = 'flex';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
