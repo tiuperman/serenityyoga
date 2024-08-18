@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Serenity Yoga Studio</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="script.js"></script>  
+</head>
+<body>
+    <header>
+        <button class="menu-toggle">&#9776;</button>
+        <h1><img src="images/yoga1.png" alt="Serenity Yoga Studio Logo">Serenity Yoga Studio</h1>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Yoga Class</h2>
+        <h3>Class session conducted last 10 August 2024</h3>
+        <figure>
+            <a href="images/yoga3.jpg">
+            <img src="images/yoga3s.jpg" alt="Yoga Class" class="thumbnail">
+            </a>
+            <a href="images/yoga4.jpg">
+            <img src="images/yoga4s.jpg" alt="Yoga Class" class="thumbnail">
+            </a>
+            <a href="images/yoga5.jpeg">
+            <img src="images/yoga5s.jpg" alt="Yoga Class" class="thumbnail">
+            </a> 
+            <a href="images/yoga6.jpg">
+            <img src="images/yoga6s.jpg" alt="Yoga Class" class="thumbnail">
+            </a>  
+        </figure>
+        <h3>Class session conducted last 17 August 2024</h3>
+        <figure>
+            <a href="images/yoga7.jpg">
+            <img src="images/yoga7s.jpg" alt="Yoga Class" class="thumbnail">
+            </a>
+            <a href="images/yoga8.jpg">
+            <img src="images/yoga8s.jpg" alt="Yoga Class" class="thumbnail">
+            </a>
+            <a href="images/yoga9.jpg">
+            <img src="images/yoga9s.jpg" alt="Yoga Class" class="thumbnail">
+            </a>
+            <a href="images/yoga10.jpg">
+            <img src="images/yoga10s.jpg" alt="Yoga Class" class="thumbnail">
+            </a>    
+        </figure>
+        <h2>Yoga Class Videos</h2>
+        <h3>Class sessions conducted last 3,10, and 17 August 2024</h3>
+        <div>
+        <video id="video" poster="images/preview.png" controls width="480" height="360">
+            <source src="videos/yogaclass.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="videos/yogaclass.webm" type='video/webm; codecs="vp8, vorbis"'>
+            <source src="videos/yogaclass.ogg" type='video/ogg; codecs="theora, vorbis"'>  
+        </video>
+        <video id="video2" poster="images/preview2.png" controls width="480" height="360">
+            <source src="videos/yogaclass2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="videos/yogaclass2.webm" type='video/webm; codecs="vp8, vorbis"'>
+            <source src="videos/yogaclass2.ogg" type='video/ogg; codecs="theora, vorbis"'>  
+        </video>
+        <video id="video3" poster="images/preview3.png" controls width="480" height="360">
+            <source src="videos/yogaclass3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="videos/yogaclass3.webm" type='video/webm; codecs="vp8, vorbis"'>
+            <source src="videos/yogaclass3.ogg" type='video/ogg; codecs="theora, vorbis"'>  
+        </video>
+        <br><br>
+        <h2>Relaxing Yoga Music</h2>
+        <h3>Meditation music to relax </h3>
+        <p class="track-name">Track 1: 15 minute - Relaxing Yoga Music</p>
+        <audio id="yoga" controls preload="auto">
+            <source src="audio/yogamusic.mp3" type="audio/mp3">
+            <source src="audio/yogamusic.webm" type="audio/mp3">
+            <source src="audio/yogamusic.ogg" type="audio/mp3">  
+            <p>Browser doesn't support the audio control</p>
+        </audio>
+        <p class="track-name">Track 2: 15 minute - Yoga Music</p>
+        <audio id="yoga2" controls preload="auto">
+            <source src="audio/yogamusic2.mp3" type="audio/mp3">
+            <source src="audio/yogamusic2.webm" type="audio/mp3">
+            <source src="audio/yogamusic2.ogg" type="audio/mp3">  
+            <p>Browser doesn't support the audio control</p>
+        </audio>
+        <p class="track-name">Track 3: 30 minute - Meditation Music</p>
+        <audio id="yoga3" controls preload="auto">
+            <source src="audio/yogamusic3.mp3" type="audio/mp3">
+            <source src="audio/yogamusic3.webm" type="audio/mp3">
+            <source src="audio/yogamusic3.ogg" type="audio/mp3">  
+            <p>Browser doesn't support the audio control</p>
+        </audio>
+        <br><br>
+        </div>
+    </main>
+    <footer> 
+        <p><strong>Copyright &copy; 2024 </strong> <em>Serenity Yoga Studio.</em></p> 
+    </footer>  
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+    
+            menuToggle.addEventListener('click', function() {
+                if (mainNav.style.display === 'flex') {
+                    mainNav.style.display = 'none';
+                } else {
+                    mainNav.style.display = 'flex';
+                }
+            });
+        });
+    </script>      
+</body>
+</html>
